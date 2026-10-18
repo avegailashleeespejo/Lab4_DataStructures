@@ -1,0 +1,230 @@
+LAB 4: APPENDIX
+EXECUTION LOG
+
+EXERCISE 1: ENGINEERING TEST DATA ORGANIZER
+Enter your last name: ESPEJO
+Enter your seed number: 8
+Enter your favorite artist: Cup of Joe
+
+===== GENERATED TEST DATA =====
+{'source': 'ESPEJO_T1', 'category': 'TEMPERATURE', 'value': 76}
+{'source': 'ESPEJO_T2', 'category': 'VOLTAGE', 'value': 97}
+{'source': 'ESPEJO_T3', 'category': 'CURRENT', 'value': 95}
+{'source': 'ESPEJO_T4', 'category': 'PRESSURE', 'value': 97}
+{'source': 'ESPEJO_T5', 'category': 'SPEED', 'value': 91}
+{'source': 'ESPEJO_T1', 'category': 'TEMPERATURE', 'value': 86}
+{'source': 'ESPEJO_T2', 'category': 'VOLTAGE', 'value': 96}
+{'source': 'ESPEJO_T1', 'category': 'TEMPERATURE', 'value': 76}
+
+===== ORGANIZED TEST DATA =====
+ESPEJO_T1 {'TEMPERATURE': [76, 86, 76]}
+ESPEJO_T2 {'VOLTAGE': [97, 96]}
+ESPEJO_T3 {'CURRENT': [95]}
+ESPEJO_T4 {'PRESSURE': [97]}
+ESPEJO_T5 {'SPEED': [91]}
+
+===== REPEATED AND DISTINCT DATA =====
+Repeated records: [('ESPEJO_T1', 'TEMPERATURE', 76)]
+Total records: 8
+Distinct records: 7
+
+===== NUMERICAL SUMMARIES =====
+CURRENT: Count=1, Min=95, Max=95, Average=95.00
+PRESSURE: Count=1, Min=97, Max=97, Average=97.00
+SPEED: Count=1, Min=91, Max=91, Average=91.00
+TEMPERATURE: Count=3, Min=76, Max=86, Average=79.33
+VOLTAGE: Count=2, Min=96, Max=97, Average=96.50
+
+===== ORDERED RESULTS =====
+{'source': 'ESPEJO_T3', 'category': 'CURRENT', 'value': 95}
+{'source': 'ESPEJO_T4', 'category': 'PRESSURE', 'value': 97}
+{'source': 'ESPEJO_T5', 'category': 'SPEED', 'value': 91}
+{'source': 'ESPEJO_T1', 'category': 'TEMPERATURE', 'value': 76}
+{'source': 'ESPEJO_T1', 'category': 'TEMPERATURE', 'value': 76}
+{'source': 'ESPEJO_T1', 'category': 'TEMPERATURE', 'value': 86}
+{'source': 'ESPEJO_T2', 'category': 'VOLTAGE', 'value': 96}
+{'source': 'ESPEJO_T2', 'category': 'VOLTAGE', 'value': 97}
+
+===== FINAL SUMMARY =====
+Student: ESPEJO
+Favorite artist: CUP OF JOE
+Total records: 8
+Distinct records: 7
+Repeated record combinations: 1
+Categories measured: 5
+Sources tested: 5
+
+EXERCISE 2: STUDENT PERFORMANCE DATA ANALYZER
+Enter your last name: ESPEJO
+Enter your seed number: 9
+Enter your favorite artist: Cup of Joe
+
+===== GENERATED PERFORMANCE RECORDS =====
+{'student': 'ESPEJO_S1', 'subject': 'PROGRAMMING', 'score': 95, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S1', 'subject': 'MATHEMATICS', 'score': 77, 'category': 'PASSING'}
+{'student': 'ESPEJO_S1', 'subject': 'ELECTRONICS', 'score': 77, 'category': 'PASSING'}
+{'student': 'ESPEJO_S1', 'subject': 'PHYSICS', 'score': 81, 'category': 'GOOD'}
+{'student': 'ESPEJO_S1', 'subject': 'ENGLISH', 'score': 77, 'category': 'PASSING'}
+{'student': 'ESPEJO_S2', 'subject': 'PROGRAMMING', 'score': 79, 'category': 'PASSING'}
+{'student': 'ESPEJO_S2', 'subject': 'MATHEMATICS', 'score': 79, 'category': 'PASSING'}
+{'student': 'ESPEJO_S2', 'subject': 'ELECTRONICS', 'score': 83, 'category': 'GOOD'}
+{'student': 'ESPEJO_S2', 'subject': 'PHYSICS', 'score': 79, 'category': 'PASSING'}
+{'student': 'ESPEJO_S2', 'subject': 'ENGLISH', 'score': 88, 'category': 'GOOD'}
+{'student': 'ESPEJO_S3', 'subject': 'PROGRAMMING', 'score': 81, 'category': 'GOOD'}
+{'student': 'ESPEJO_S3', 'subject': 'MATHEMATICS', 'score': 85, 'category': 'GOOD'}
+{'student': 'ESPEJO_S3', 'subject': 'ELECTRONICS', 'score': 81, 'category': 'GOOD'}
+{'student': 'ESPEJO_S3', 'subject': 'PHYSICS', 'score': 90, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S3', 'subject': 'ENGLISH', 'score': 100, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S4', 'subject': 'PROGRAMMING', 'score': 87, 'category': 'GOOD'}
+{'student': 'ESPEJO_S4', 'subject': 'MATHEMATICS', 'score': 83, 'category': 'GOOD'}
+{'student': 'ESPEJO_S4', 'subject': 'ELECTRONICS', 'score': 92, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S4', 'subject': 'PHYSICS', 'score': 61, 'category': 'FAILING'}
+{'student': 'ESPEJO_S4', 'subject': 'ENGLISH', 'score': 97, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S5', 'subject': 'PROGRAMMING', 'score': 85, 'category': 'GOOD'}
+{'student': 'ESPEJO_S5', 'subject': 'MATHEMATICS', 'score': 94, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S5', 'subject': 'ELECTRONICS', 'score': 63, 'category': 'FAILING'}
+{'student': 'ESPEJO_S5', 'subject': 'PHYSICS', 'score': 99, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S5', 'subject': 'ENGLISH', 'score': 61, 'category': 'FAILING'}
+{'student': 'ESPEJO_S1', 'subject': 'PROGRAMMING', 'score': 95, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S1', 'subject': 'PHYSICS', 'score': None, 'category': 'INCOMPLETE'}
+
+===== ORGANIZED STUDENT DATA =====
+ESPEJO_S1 {'PROGRAMMING': 95, 'MATHEMATICS': 77, 'ELECTRONICS': 77, 'PHYSICS': None, 'ENGLISH': 77}
+ESPEJO_S2 {'PROGRAMMING': 79, 'MATHEMATICS': 79, 'ELECTRONICS': 83, 'PHYSICS': 79, 'ENGLISH': 88}
+ESPEJO_S3 {'PROGRAMMING': 81, 'MATHEMATICS': 85, 'ELECTRONICS': 81, 'PHYSICS': 90, 'ENGLISH': 100}
+ESPEJO_S4 {'PROGRAMMING': 87, 'MATHEMATICS': 83, 'ELECTRONICS': 92, 'PHYSICS': 61, 'ENGLISH': 97}
+ESPEJO_S5 {'PROGRAMMING': 85, 'MATHEMATICS': 94, 'ELECTRONICS': 63, 'PHYSICS': 99, 'ENGLISH': 61}
+
+===== REPEATED AND INCOMPLETE RECORDS =====
+Repeated student-subject pairs: [('ESPEJO_S1', 'PROGRAMMING'), ('ESPEJO_S1', 'PHYSICS')]
+Incomplete records: [{'student': 'ESPEJO_S1', 'subject': 'PHYSICS', 'score': None, 'category': 'INCOMPLETE'}]
+
+===== PERFORMANCE CATEGORIES =====
+EXCELLENT : 8
+FAILING : 3
+GOOD : 9
+INCOMPLETE : 1
+PASSING : 6
+
+===== STUDENT SUMMARIES =====
+ESPEJO_S1 Valid scores: 6 Average: 83.67
+ESPEJO_S2 Valid scores: 5 Average: 81.60
+ESPEJO_S3 Valid scores: 5 Average: 87.40
+ESPEJO_S4 Valid scores: 5 Average: 84.00
+ESPEJO_S5 Valid scores: 5 Average: 80.40
+
+===== SUBJECT SUMMARIES =====
+PROGRAMMING Valid scores: 6 Average: 87.00
+MATHEMATICS Valid scores: 5 Average: 83.60
+ELECTRONICS Valid scores: 5 Average: 79.20
+PHYSICS Valid scores: 5 Average: 82.00
+ENGLISH Valid scores: 5 Average: 84.60
+
+===== ORDERED RESULTS =====
+{'student': 'ESPEJO_S1', 'subject': 'ELECTRONICS', 'score': 77, 'category': 'PASSING'}
+{'student': 'ESPEJO_S1', 'subject': 'ENGLISH', 'score': 77, 'category': 'PASSING'}
+{'student': 'ESPEJO_S1', 'subject': 'MATHEMATICS', 'score': 77, 'category': 'PASSING'}
+{'student': 'ESPEJO_S1', 'subject': 'PHYSICS', 'score': None, 'category': 'INCOMPLETE'}
+{'student': 'ESPEJO_S1', 'subject': 'PHYSICS', 'score': 81, 'category': 'GOOD'}
+{'student': 'ESPEJO_S1', 'subject': 'PROGRAMMING', 'score': 95, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S1', 'subject': 'PROGRAMMING', 'score': 95, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S2', 'subject': 'ELECTRONICS', 'score': 83, 'category': 'GOOD'}
+{'student': 'ESPEJO_S2', 'subject': 'ENGLISH', 'score': 88, 'category': 'GOOD'}
+{'student': 'ESPEJO_S2', 'subject': 'MATHEMATICS', 'score': 79, 'category': 'PASSING'}
+{'student': 'ESPEJO_S2', 'subject': 'PHYSICS', 'score': 79, 'category': 'PASSING'}
+{'student': 'ESPEJO_S2', 'subject': 'PROGRAMMING', 'score': 79, 'category': 'PASSING'}
+{'student': 'ESPEJO_S3', 'subject': 'ELECTRONICS', 'score': 81, 'category': 'GOOD'}
+{'student': 'ESPEJO_S3', 'subject': 'ENGLISH', 'score': 100, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S3', 'subject': 'MATHEMATICS', 'score': 85, 'category': 'GOOD'}
+{'student': 'ESPEJO_S3', 'subject': 'PHYSICS', 'score': 90, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S3', 'subject': 'PROGRAMMING', 'score': 81, 'category': 'GOOD'}
+{'student': 'ESPEJO_S4', 'subject': 'ELECTRONICS', 'score': 92, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S4', 'subject': 'ENGLISH', 'score': 97, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S4', 'subject': 'MATHEMATICS', 'score': 83, 'category': 'GOOD'}
+{'student': 'ESPEJO_S4', 'subject': 'PHYSICS', 'score': 61, 'category': 'FAILING'}
+{'student': 'ESPEJO_S4', 'subject': 'PROGRAMMING', 'score': 87, 'category': 'GOOD'}
+{'student': 'ESPEJO_S5', 'subject': 'ELECTRONICS', 'score': 63, 'category': 'FAILING'}
+{'student': 'ESPEJO_S5', 'subject': 'ENGLISH', 'score': 61, 'category': 'FAILING'}
+{'student': 'ESPEJO_S5', 'subject': 'MATHEMATICS', 'score': 94, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S5', 'subject': 'PHYSICS', 'score': 99, 'category': 'EXCELLENT'}
+{'student': 'ESPEJO_S5', 'subject': 'PROGRAMMING', 'score': 85, 'category': 'GOOD'}
+
+===== FINAL PERFORMANCE SUMMARY =====
+Total records: 27
+Valid scores: 26
+Incomplete records: 1
+Repeated student-subject pairs: 2
+Students: 5
+Subjects: 5
+
+EXERCISE 3: TRANSACTION HISTORY ANALYZER
+Enter your last name: ESPEJO
+Enter your seed number: 9
+Enter your favorite artist: Cup of Joe
+
+===== GENERATED TRANSACTIONS =====
+{'customer': 'ESPEJO_C1', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C1', 'product': 'NOTEBOOK', 'quantity': 1, 'price': 35.0, 'total': 35.0}
+{'customer': 'ESPEJO_C2', 'product': 'NOTEBOOK', 'quantity': 1, 'price': 35.0, 'total': 35.0}
+{'customer': 'ESPEJO_C2', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C3', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C3', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C4', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C4', 'product': 'HEADPHONES', 'quantity': 4, 'price': 350.0, 'total': 1400.0}
+{'customer': 'ESPEJO_C5', 'product': 'HEADPHONES', 'quantity': 4, 'price': 350.0, 'total': 1400.0}
+{'customer': 'ESPEJO_C5', 'product': 'HEADPHONES', 'quantity': 4, 'price': 350.0, 'total': 1400.0}
+{'customer': 'ESPEJO_C1', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+
+===== REPEATED AND DISTINCT DATA =====
+Total transaction records: 11
+Distinct customer-product pairs: 8
+Repeated purchases: {('ESPEJO_C1', 'PEN'): 2, ('ESPEJO_C3', 'PEN'): 2, ('ESPEJO_C5', 'HEADPHONES'): 2}
+Distinct customers: 5
+Distinct products: 3
+
+===== TRANSACTION VALUES =====
+ESPEJO_C1 PEN Total: PHP 20.00
+ESPEJO_C1 NOTEBOOK Total: PHP 35.00
+ESPEJO_C2 NOTEBOOK Total: PHP 35.00
+ESPEJO_C2 PEN Total: PHP 20.00
+ESPEJO_C3 PEN Total: PHP 20.00
+ESPEJO_C3 PEN Total: PHP 20.00
+ESPEJO_C4 PEN Total: PHP 20.00
+ESPEJO_C4 HEADPHONES Total: PHP 1400.00
+ESPEJO_C5 HEADPHONES Total: PHP 1400.00
+ESPEJO_C5 HEADPHONES Total: PHP 1400.00
+ESPEJO_C1 PEN Total: PHP 20.00
+
+===== CUSTOMER SUMMARIES =====
+ESPEJO_C1 Transactions: 3 Total spent: PHP 75.00
+ESPEJO_C2 Transactions: 2 Total spent: PHP 55.00
+ESPEJO_C3 Transactions: 2 Total spent: PHP 40.00
+ESPEJO_C4 Transactions: 2 Total spent: PHP 1420.00
+ESPEJO_C5 Transactions: 2 Total spent: PHP 2800.00
+
+===== PRODUCT SUMMARIES =====
+NOTEBOOK Quantity sold: 2 Sales: PHP 70.00
+PEN Quantity sold: 12 Sales: PHP 120.00
+USB Quantity sold: 0 Sales: PHP 0.00
+HEADPHONES Quantity sold: 12 Sales: PHP 4200.00
+CALCULATOR Quantity sold: 0 Sales: PHP 0.00
+
+===== ORDERED RESULTS =====
+{'customer': 'ESPEJO_C1', 'product': 'NOTEBOOK', 'quantity': 1, 'price': 35.0, 'total': 35.0}
+{'customer': 'ESPEJO_C1', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C1', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C2', 'product': 'NOTEBOOK', 'quantity': 1, 'price': 35.0, 'total': 35.0}
+{'customer': 'ESPEJO_C2', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C3', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C3', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C4', 'product': 'HEADPHONES', 'quantity': 4, 'price': 350.0, 'total': 1400.0}
+{'customer': 'ESPEJO_C4', 'product': 'PEN', 'quantity': 2, 'price': 10.0, 'total': 20.0}
+{'customer': 'ESPEJO_C5', 'product': 'HEADPHONES', 'quantity': 4, 'price': 350.0, 'total': 1400.0}
+{'customer': 'ESPEJO_C5', 'product': 'HEADPHONES', 'quantity': 4, 'price': 350.0, 'total': 1400.0}
+
+===== OVERALL TRANSACTION SUMMARY =====
+Total records: 11
+Total sales: PHP 4390.00
+Number of customers: 5
+Number of products: 3
+Repeated purchase combinations: 3
